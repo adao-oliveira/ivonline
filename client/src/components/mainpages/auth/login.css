@@ -1,0 +1,64 @@
+.login-content {
+    width: 100%;
+    padding: 10%;
+    margin: auto;
+    background-color: #212529;
+    height: 100vh;
+  }
+  
+  .btn-login {
+    background-color: #111;
+    color: #fff;
+  }
+  
+  .btn-login:hover {
+    background-color: #ff0000;
+    color: #fff;
+  }
+  
+  .opcoes-login a {
+    text-decoration: none;
+    color: #fff;
+    transition: .3s ease-in;
+  }
+  
+  .opcoes-login a:hover {
+    color: #ff0000;
+  }
+
+  /* register */
+  .cadastro-content {
+    width: 100%;
+    padding: 5%;
+    margin: auto;
+    background-color: #111;
+    height: 100vh;
+  }
+  
+  .btn-cadastro {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .btn-cadastro:hover {
+    background-color: #ff0000;
+    color: #fff;
+  }
+
+  .cad-login {
+    color: #fff;
+  }
+  
+  .cad-login:hover {
+    color: #ff0000;
+  }
+  
+  .opcoes-cadastro a {
+    text-decoration: none;
+    color: #fff;
+    transition: .3s ease-in;
+  }
+  
+  .opcoes-cadastro a:hover {
+    color: #ff0000;
+  }
