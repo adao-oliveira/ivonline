@@ -30,8 +30,8 @@
     color: #fff;
 }
 
-/* ----------- Product Item ----------------- */
-@import url("../utils/productItem/productItem.css");
+/* ----------- Agenda Item ----------------- */
+@import url("../utils/agendaItem/agendaItem.css");
 
 .delete-all{
     text-align: right;

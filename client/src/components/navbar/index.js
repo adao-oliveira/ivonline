@@ -52,23 +52,10 @@ function Navbar() {
                     </li>
 
                     <li className="nav-item">
-                        <Link className="nav-link" to="/editAgenda">
-
-                            {isAdmin ? 'Editar Agenda' : ''}</Link>
-                    </li>
-
-                    <li className="nav-item" style={{ marginRight: '-35px' }}>
-                        <Link className="nav-link" to="/publicarAgenda">
-
-                            {isAdmin ? 'Agenda' : ''}</Link>
-                    </li>
-
-                    <li className="nav-item">
-
-                        {isAdmin && adminRouter()}
-
                         {
-                            isLogged ? loggedRouter() : <li className="nav-link"><Link to="/login">Login ✥ Register</Link></li>
+                            isLogged ?
+                                <li className="nav-link"><Link to="/agenda">Agenda</Link></li>
+                                : ''
                         }
                     </li>
 
@@ -77,6 +64,27 @@ function Navbar() {
                             isLogged ?
                                 <li className="nav-link"><Link to="/aulas">I.V Online</Link></li>
                                 : ''
+                        }
+                    </li>
+
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/editarAgenda">
+
+                            {isAdmin ? 'Editar Agenda' : ''}</Link>
+                    </li>
+
+                    <li className="nav-item" style={{ marginRight: '-35px' }}>
+                        <Link className="nav-link" to="/publicarAgenda">
+
+                            {isAdmin ? 'Publicar Agenda' : ''}</Link>
+                    </li>
+
+                    <li className="nav-item">
+
+                        {isAdmin && adminRouter()}
+
+                        {
+                            isLogged ? loggedRouter() : <li className="nav-link"><Link to="/login">Login ✥ Register</Link></li>
                         }
                     </li>
 

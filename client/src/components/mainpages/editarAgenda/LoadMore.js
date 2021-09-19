@@ -3,8 +3,8 @@ import {GlobalState} from '../../../GlobalState'
 
 function LoadMore() {
     const state = useContext(GlobalState)
-    const [page, setPage] = state.productsAPI.page
-    const [result] = state.productsAPI.result
+    const [page, setPage] = state.agendaAPI.page
+    const [result] = state.agendaAPI.result
 
     return (
         <div className="load_more">

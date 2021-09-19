@@ -29,18 +29,15 @@ button{
 /* ---------------- NAVBAR ------------ */
 @import url("./components/navbar/navbar.css");
 
-/* ------------- Products -------------- */
+/* ------------- Agenda -------------- */
 
-@import url("./components/mainpages/editAgenda/editAgenda.css");
+@import url("./components/mainpages/editarAgenda/editarAgenda.css");
 
-/* ---------------- Detail Product --------------- */
-@import url("./components/mainpages/detailProduct/detailProduct.css");
+/* ----------------Detalhes Agenda --------------- */
+@import url("./components/mainpages/detalhesAgenda/detalhesAgenda.css");
 
 /* ------------- Login/Register ----------------- */
 @import url("./components/mainpages/auth/login.css");
-
-/* ------------ Cart ------------------- */
-@import url("./components/mainpages/cart/cart.css");
 
 /* ------------------- Publicar Agenda -------------- */
 @import url("./components/mainpages/publicarAgenda/publicarAgenda.css");
@@ -99,7 +96,7 @@ button{
   .delete-all{
     margin: 20px 0;
   }
-  .create_product .upload{
+  .upload{
     margin: 20px 0;
   }
 }

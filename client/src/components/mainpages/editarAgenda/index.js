@@ -1,39 +1,39 @@
 import React, { useContext, useState } from 'react'
 import { GlobalState } from '../../../GlobalState'
-import ProductItem from '../utils/productItem/ProductItem'
+import AgendaItem from '../utils/agendaItem'
 import Loading from '../utils/loading/Loading'
 import axios from 'axios'
 import LoadMore from './LoadMore'
 
 
-function Products() {
+function Agendar() {
     const state = useContext(GlobalState)
-    const [products, setProducts] = state.productsAPI.products
+    const [agendar, setAgendar] = state.agendaAPI.agendar
     const [isAdmin] = state.userAPI.isAdmin
     const [token] = state.token
-    const [callback, setCallback] = state.productsAPI.callback
+    const [callback, setCallback] = state.agendaAPI.callback
     const [loading, setLoading] = useState(false)
     const [isCheck, setIsCheck] = useState(false)
 
     const handleCheck = (id) => {
-        products.forEach(product => {
-            if (product._id === id) product.checked = !product.checked
+        agendar.forEach(agenda => {
+            if (agenda._id === id) agenda.checked = !agenda.checked
         })
-        setProducts([...products])
+        setAgendar([...agendar])
     }
 
-    const deleteProduct = async (id, public_id) => {
+    const deleteAgenda = async (id, public_id) => {
         try {
             setLoading(true)
             const destroyImg = axios.post('/api/destroy', { public_id }, {
                 headers: { Authorization: token }
             })
-            const deleteProduct = axios.delete(`/api/products/${id}`, {
+            const deleteAgenda = axios.delete(`/api/agendar/${id}`, {
                 headers: { Authorization: token }
             })
 
             await destroyImg
-            await deleteProduct
+            await deleteAgenda
             setCallback(!callback)
             setLoading(false)
         } catch (err) {
@@ -42,16 +42,16 @@ function Products() {
     }
 
     const checkAll = () => {
-        products.forEach(product => {
-            product.checked = !isCheck
+        agendar.forEach(agenda => {
+            agenda.checked = !isCheck
         })
-        setProducts([...products])
+        setAgendar([...agendar])
         setIsCheck(!isCheck)
     }
 
     const deleteAll = () => {
-        products.forEach(product => {
-            if (product.checked) deleteProduct(product._id, product.images.public_id)
+        agendar.forEach(agenda => {
+            if (agenda.checked) deleteAgenda(agenda._id, agenda.images.public_id)
         })
     }
 
@@ -70,22 +70,24 @@ function Products() {
                 }
                 <div className="row">
 
+                    <h2 className="mx-auto" style={{ color: '#fff', marginTop: '20px' }}>Agenda SNT Carapicuíba</h2>
+
                     <div className="img-banner">
                         {
-                            products.map(product => {
-                                return <ProductItem key={product._id} product={product}
-                                    isAdmin={isAdmin} deleteProduct={deleteProduct} handleCheck={handleCheck} />
+                            agendar.map(agenda => {
+                                return <AgendaItem key={agenda._id} agenda={agenda}
+                                    isAdmin={isAdmin} deleteAgenda={deleteAgenda} handleCheck={handleCheck} />
                             })
                         }
                     </div>
                 </div>
 
                 <LoadMore />
-                {products.length === 0 && <Loading />}
+                {agendar.length === 0 && <Loading />}
             </div>
 
         </>
     )
 }
 
-export default Products
+export default Agendar

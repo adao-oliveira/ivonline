@@ -2,8 +2,8 @@ import {useState, useEffect} from 'react'
 import axios from 'axios'
 
 
-function ProductsAPI() {
-    const [products, setProducts] = useState([])
+function AgendaAPI() {
+    const [agendar, setAgendar] = useState([])
     const [callback, setCallback] = useState(false)
     const [sort, setSort] = useState('')
     const [search, setSearch] = useState('')
@@ -11,16 +11,16 @@ function ProductsAPI() {
     const [result, setResult] = useState(0)
 
     useEffect(() =>{
-        const getProducts = async () => {
-            const res = await axios.get(`/api/products?limit=${page*9}&${sort}&titulo[regex]=${search}`)
-            setProducts(res.data.products)
+        const getAgendar = async () => {
+            const res = await axios.get(`/api/agendar?limit=${page*9}&${sort}&titulo[regex]=${search}`)
+            setAgendar(res.data.agendar)
             setResult(res.data.result)
         }
-        getProducts()
+        getAgendar()
     },[callback, sort, search, page])
     
     return {
-        products: [products, setProducts],
+        agendar: [agendar, setAgendar],
         callback: [callback, setCallback],
         sort: [sort, setSort],
         search: [search, setSearch],
@@ -29,4 +29,4 @@ function ProductsAPI() {
     }
 }
 
-export default ProductsAPI
+export default AgendaAPI

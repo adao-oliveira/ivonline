@@ -15,7 +15,7 @@ const initialState = {
 
 function PublicarAgenda() {
     const state = useContext(GlobalState)
-    const [product, setProduct] = useState(initialState)
+    const [agenda, setAgenda] = useState(initialState)
     const [images, setImages] = useState(false)
     const [loading, setLoading] = useState(false)
 
@@ -25,30 +25,30 @@ function PublicarAgenda() {
 
     const param = useParams()
 
-    const [products] = state.productsAPI.products
+    const [agendar] = state.agendaAPI.agendar
     const [onEdit, setOnEdit] = useState(false)
-    const [callback, setCallback] = state.productsAPI.callback
+    const [callback, setCallback] = state.agendaAPI.callback
 
     useEffect(() => {
         if (param.id) {
             setOnEdit(true)
-            products.forEach(product => {
-                if (product._id === param.id) {
-                    setProduct(product)
-                    setImages(product.images)
+            agendar.forEach(agenda => {
+                if (agenda._id === param.id) {
+                    setAgenda(agenda)
+                    setImages(agenda.images)
                 }
             })
         } else {
             setOnEdit(false)
-            setProduct(initialState)
+            setAgenda(initialState)
             setImages(false)
         }
-    }, [param.id, products])
+    }, [param.id, agendar])
 
     const handleUpload = async e => {
         e.preventDefault()
         try {
-            if (!isAdmin) return alert("You're not an admin")
+            if (!isAdmin) return alert("Você não possui permissão para realizar essa ação")
             const file = e.target.files[0]
 
             if (!file) return alert("File not exist.")
@@ -76,7 +76,7 @@ function PublicarAgenda() {
 
     const handleDestroy = async () => {
         try {
-            if (!isAdmin) return alert("You're not an admin")
+            if (!isAdmin) return alert("Você não possui permissão para realizar essa ação")
             setLoading(true)
             await axios.post('/api/destroy', { public_id: images.public_id }, {
                 headers: { Authorization: token }
@@ -90,21 +90,21 @@ function PublicarAgenda() {
 
     const handleChangeInput = e => {
         const { name, value } = e.target
-        setProduct({ ...product, [name]: value })
+        setAgenda({ ...agenda, [name]: value })
     }
 
     const handleSubmit = async e => {
         e.preventDefault()
         try {
-            if (!isAdmin) return alert("You're not an admin")
+            if (!isAdmin) return alert("Você não possui permissão para realizar essa ação")
             if (!images) return alert("No Image Upload")
 
             if (onEdit) {
-                await axios.put(`/api/products/${product._id}`, { ...product, images }, {
+                await axios.put(`/api/agendar/${agenda._id}`, { ...agenda, images }, {
                     headers: { Authorization: token }
                 })
             } else {
-                await axios.post('/api/products', { ...product, images }, {
+                await axios.post('/api/agendar', { ...agenda, images }, {
                     headers: { Authorization: token }
                 })
             }
@@ -130,30 +130,30 @@ function PublicarAgenda() {
 
                     <div className="form-group">
                         <label>Título:</label>
-                        <input className="form-control" type="text" name="titulo" id="titulo" required value={product.titulo} onChange={handleChangeInput} />
+                        <input className="form-control" type="text" name="titulo" id="titulo" required value={agenda.titulo} onChange={handleChangeInput} />
                     </div>
 
                     <div className="form-group">
                         <label>Tipo da Agenda:</label>
-                        <input className="form-control" type="text" name="tipoAgenda" id="tipoAgenda" required value={product.tipoAgenda} onChange={handleChangeInput} placeholder="-- Informe o tipo da agenda --" />
+                        <input className="form-control" type="text" name="tipoAgenda" id="tipoAgenda" required value={agenda.tipoAgenda} onChange={handleChangeInput} placeholder="-- Informe o tipo da agenda --" />
                     </div>
 
                     <div className="form-group">
                         <label>Descrição da Agenda:</label>
-                        <textarea className="form-control" rows="3" type="text" name="descricao" id="descricao" required value={product.descricao} onChange={handleChangeInput} />
+                        <textarea className="form-control" rows="3" type="text" name="descricao" id="descricao" required value={agenda.descricao} onChange={handleChangeInput} />
                     </div>
 
                     <div className="form-group row">
                         <div className="col-6">
                             <label>Data:</label>
-                            <div required value={product.data} onChange={handleChangeInput}>
+                            <div required value={agenda.data} onChange={handleChangeInput}>
                                 <input type="date" className="form-control" />
                             </div>
                         </div>
 
                         <div className="col-6">
                             <label>Hora:</label>
-                            <div required value={product.hora} onChange={handleChangeInput}>
+                            <div required value={agenda.hora} onChange={handleChangeInput}>
                                 <input type="time" className="form-control" />
                             </div>
                         </div>

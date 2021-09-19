@@ -1,5 +1,5 @@
 import React, {createContext, useState, useEffect} from 'react'
-import ProductsAPI from './api/ProductsAPI'
+import AgendaAPI from './api/AgendaAPI'
 import UserAPI from './api/UserAPI'
 
 import axios from 'axios'
@@ -31,7 +31,7 @@ export const DataProvider = ({children}) =>{
     
     const state = {
         token: [token, setToken],
-        productsAPI: ProductsAPI(),
+        agendaAPI: AgendaAPI(),
         userAPI: UserAPI(token)
     }
 

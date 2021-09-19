@@ -1,33 +1,32 @@
 import React, { useContext, useState, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { GlobalState } from '../../../GlobalState'
-import ProductItem from '../utils/productItem/ProductItem'
+import AgendaItem from '../utils/agendaItem/index'
 
 
-function DetailProduct() {
+function DetalhesAgenda() {
     const params = useParams()
     const state = useContext(GlobalState)
-    const [products] = state.productsAPI.products
-    const addCart = state.userAPI.addCart
-    const [detailProduct, setDetailProduct] = useState([])
+    const [agendar] = state.agendaAPI.agendar
+    const [detalhesAgenda, setDetalhesAgenda] = useState([])
 
     useEffect(() => {
         if (params.id) {
 
-            products.forEach(product => {
-                if (product._id === params.id) setDetailProduct(product)
+            agendar.forEach(agenda => {
+                if (agenda._id === params.id) setDetalhesAgenda(agenda)
             })
         }
-    }, [params.id, products])
+    }, [params.id, agendar])
 
-    if (detailProduct.length === 0) return null;
+    if (detalhesAgenda.length === 0) return null;
 
     return (
         <>
             <div className="container-fluid">
                 <div className="row">
-                    <img src={detailProduct.images.url} className="img-banner" alt="Banner" />
-                    <h3 className="mx-auto mt-5 titulo"><strong>{detailProduct.titulo}</strong></h3>
+                    <img src={detalhesAgenda.images.url} className="img-banner" alt="Banner" />
+                    <h3 className="mx-auto mt-5 titulo" style={{textTransform:'uppercase'}}><strong>{detalhesAgenda.titulo}</strong></h3>
                 </div>
 
                 <div className="container">
@@ -35,19 +34,19 @@ function DetailProduct() {
                         <div className="col-md-3 col-sm-12 box-info p-3 my-2">
                             <i className="fas fa-ticket-alt fa-2x"></i>
                             <h5><strong>Tipo</strong></h5>
-                            <span className="mt-3">{detailProduct.tipoAgenda}</span>
+                            <span className="mt-3">{detalhesAgenda.tipoAgenda}</span>
                         </div>
 
                         <div className="col-md-3 col-sm-12 box-info p-3 my-2">
                             <i className="fas fa-calendar-alt fa-2x"></i>
                             <h5><strong>Data</strong></h5>
-                            <span className="mt-3">{detailProduct.data}</span>
+                            <span className="mt-3">{detalhesAgenda.data}</span>
                         </div>
 
                         <div className="col-md-3 col-sm-12 box-info p-3 my-2">
                             <i className="fas fa-clock fa-2x"></i>
                             <h5><strong>Hora</strong></h5>
-                            <span className="mt-3">{detailProduct.hora}</span>
+                            <span className="mt-3">{detalhesAgenda.hora}</span>
                         </div>
                     </div>
 
@@ -56,7 +55,7 @@ function DetailProduct() {
                             <h5><strong>Detalhes da Agenda</strong></h5>
                         </div>
                         <div className="col-12 text-center">
-                            <p>{detailProduct.descricao}</p>
+                            <p>{detalhesAgenda.descricao}</p>
                         </div>
 
 
@@ -68,4 +67,4 @@ function DetailProduct() {
     )
 }
 
-export default DetailProduct
+export default DetalhesAgenda
