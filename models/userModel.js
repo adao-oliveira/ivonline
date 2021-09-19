@@ -21,13 +21,14 @@ const userSchema = new mongoose.Schema({
         required: true,
         unique: true
     },
-    password: {
+    senha: {
         type: String,
         required: true
     },
     whatsapp: {
         type: Number,
         required: true,
+        trim: true,
     },
     modulo: {
         type: String,

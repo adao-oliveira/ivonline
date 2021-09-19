@@ -7,7 +7,7 @@ const productSchema = new mongoose.Schema({
         trim: true,
         required: true
     },
-    tipoEvento:{
+    tipoAgenda:{
         type: String,
         trim: true,
         required: true

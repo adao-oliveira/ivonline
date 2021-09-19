@@ -4,7 +4,7 @@ import axios from 'axios'
 
 function Login() {
     const [user, setUser] = useState({
-        number: '', password: ''
+        number: '', senha: ''
     })
 
     const onChangeInput = e => {
@@ -34,12 +34,12 @@ function Login() {
                 </div>
 
                 <input className="form-control my-2" type="number" name="number" required placeholder="Nº da Matrícula" value={user.number} onChange={onChangeInput} />
-                <input className="form-control my-2" type="password" name="password" required autoComplete="on" placeholder="Password" value={user.password} onChange={onChangeInput} />
+                <input className="form-control my-2" type="password" name="senha" required autoComplete="on" placeholder="Senha" value={user.senha} onChange={onChangeInput} />
 
                 <button className="btn btn-lg btn-block btn-login" type="submit">Acessar</button>
 
                 <div className="opcoes-login mt-5 text-center">
-                    <Link to="/RecuperarSenha" className="mx-2">Recuperar Senha</Link>
+                    <Link to="/" className="mx-2">Recuperar Senha</Link>
                     <span className="text-white">&#128293;</span>
                     <Link to='/register' className="mx-2">Quero cadastrar</Link>
                 </div>

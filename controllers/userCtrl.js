@@ -1,23 +1,22 @@
 const Users = require('../models/userModel')
-const Payments = require('../models/paymentModel')
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 
 const userCtrl = {
     register: async (req, res) =>{
         try {
-            const {name, sobreNome, number, email, password, whatsapp, modulo, grupoEquipe, perfil} = req.body;
+            const {name, sobreNome, number, email, senha, whatsapp, modulo, grupoEquipe, perfil} = req.body;
 
             const user = await Users.findOne({number})
             if(user) return res.status(400).json({msg: "Essa matrícula já está cadastrada em nosso sistema"})
 
-            if(password.length < 6) 
-                return res.status(400).json({msg: "Password is at least 6 characters long."})
+            if(senha.length < 6) 
+                return res.status(400).json({msg: "A senha deve ter pelo menos 6 caracteres"})
 
             // Password Encryption
-            const passwordHash = await bcrypt.hash(password, 10)
+            const passwordHash = await bcrypt.hash(senha, 10)
             const newUser = new Users({
-                name, sobreNome, number, email, whatsapp, modulo, grupoEquipe, perfil, password: passwordHash
+                name, sobreNome, number, email, whatsapp, modulo, grupoEquipe, perfil, senha: passwordHash
             })
 
             // Save mongodb
@@ -41,13 +40,13 @@ const userCtrl = {
     },
     login: async (req, res) =>{
         try {
-            const {number, password} = req.body;
+            const {number, senha} = req.body;
 
             const user = await Users.findOne({number})
             if(!user) return res.status(400).json({msg: "User does not exist."})
 
-            const isMatch = await bcrypt.compare(password, user.password)
-            if(!isMatch) return res.status(400).json({msg: "Incorrect password."})
+            const isMatch = await bcrypt.compare(senha, user.senha)
+            if(!isMatch) return res.status(400).json({msg: "Senha incorreta"})
 
             // If login success , create access token and refresh token
             const accesstoken = createAccessToken({id: user._id})
@@ -93,8 +92,8 @@ const userCtrl = {
     },
     getUser: async (req, res) =>{
         try {
-            const user = await Users.findById(req.user.id).select('-password')
-            if(!user) return res.status(400).json({msg: "User does not exist."})
+            const user = await Users.findById(req.user.id).select('-senha')
+            if(!user) return res.status(400).json({msg: "Matricula não existe"})
 
             res.json(user)
         } catch (err) {
@@ -104,7 +103,7 @@ const userCtrl = {
     addCart: async (req, res) =>{
         try {
             const user = await Users.findById(req.user.id)
-            if(!user) return res.status(400).json({msg: "User does not exist."})
+            if(!user) return res.status(400).json({msg: "Matricula não existe"})
 
             await Users.findOneAndUpdate({_id: req.user.id}, {
                 cart: req.body.cart
@@ -115,15 +114,6 @@ const userCtrl = {
             return res.status(500).json({msg: err.message})
         }
     },
-    history: async(req, res) =>{
-        try {
-            const history = await Payments.find({user_id: req.user.id})
-
-            res.json(history)
-        } catch (err) {
-            return res.status(500).json({msg: err.message})
-        }
-    }
  }
 
 

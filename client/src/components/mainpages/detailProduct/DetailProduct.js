@@ -35,7 +35,7 @@ function DetailProduct() {
                         <div className="col-md-3 col-sm-12 box-info p-3 my-2">
                             <i className="fas fa-ticket-alt fa-2x"></i>
                             <h5><strong>Tipo</strong></h5>
-                            <span className="mt-3">{detailProduct.tipoEvento}</span>
+                            <span className="mt-3">{detailProduct.tipoAgenda}</span>
                         </div>
 
                         <div className="col-md-3 col-sm-12 box-info p-3 my-2">
@@ -53,7 +53,7 @@ function DetailProduct() {
 
                     <div className="row box-detalhes mt-5">
                         <div className="col-12 text-center">
-                            <h5><strong>Detalhes do Evento</strong></h5>
+                            <h5><strong>Detalhes da Agenda</strong></h5>
                         </div>
                         <div className="col-12 text-center">
                             <p>{detailProduct.descricao}</p>

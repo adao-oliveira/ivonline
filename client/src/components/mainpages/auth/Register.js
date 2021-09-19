@@ -4,7 +4,7 @@ import axios from 'axios'
 
 function Register() {
     const [user, setUser] = useState({
-        name: '', sobreNome: '', number: '', email: '', password: '', whatsapp: '', modulo: '', grupoEquipe: '', perfil: ''
+        name: '', sobreNome: '', number: '', email: '', senha: '', whatsapp: '', modulo: '', grupoEquipe: '', perfil: ''
     })
 
     const onChangeInput = e =>{
@@ -52,7 +52,7 @@ function Register() {
                 {/* SENHA */}
                 <div className="form-row">
                     <div className="form-group col-md-6">
-                        <input className="form-control" type="password" name="password" required autoComplete="on" placeholder="Password" value={user.password} onChange={onChangeInput} />
+                        <input className="form-control" type="password" name="senha" required autoComplete="on" placeholder="Senha" value={user.senha} onChange={onChangeInput} />
                     </div>
                     {/* WHATSAPP */}
                     <div className="form-group col-md-6">

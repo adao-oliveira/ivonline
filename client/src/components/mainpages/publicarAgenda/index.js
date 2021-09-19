@@ -7,13 +7,13 @@ import { useParams } from 'react-router-dom'
 const initialState = {
     titulo: '',
     descricao: '',
-    tipoEvento: '',
+    tipoAgenda: '',
     data: '',
     hora: '',
     _id: ''
 }
 
-function CreateProduct() {
+function PublicarAgenda() {
     const state = useContext(GlobalState)
     const [product, setProduct] = useState(initialState)
     const [images, setImages] = useState(false)
@@ -123,7 +123,7 @@ function CreateProduct() {
         <div className="container">
             <div className="col-12 mt-5">
                 <div className="row">
-                    <h3 className="mx-auto font-weight-bold">{onEdit ? 'Atualizar Evento' : 'Novo Evento'}</h3>
+                    <h3 className="mx-auto font-weight-bold">{onEdit ? 'Atualizar agenda' : 'Nova agenda'}</h3>
                 </div>
 
                 <form onSubmit={handleSubmit}>
@@ -134,12 +134,12 @@ function CreateProduct() {
                     </div>
 
                     <div className="form-group">
-                        <label>Tipo do Evento:</label>
-                        <input className="form-control" type="text" name="tipoEvento" id="tipoEvento" required value={product.tipoEvento} onChange={handleChangeInput} placeholder="-- Informe o tipo de evento --" />
+                        <label>Tipo da Agenda:</label>
+                        <input className="form-control" type="text" name="tipoAgenda" id="tipoAgenda" required value={product.tipoAgenda} onChange={handleChangeInput} placeholder="-- Informe o tipo da agenda --" />
                     </div>
 
                     <div className="form-group">
-                        <label>Descrição do Evento:</label>
+                        <label>Descrição da Agenda:</label>
                         <textarea className="form-control" rows="3" type="text" name="descricao" id="descricao" required value={product.descricao} onChange={handleChangeInput} />
                     </div>
 
@@ -172,7 +172,7 @@ function CreateProduct() {
                         }
                     </div>
 
-                    <button className="btn btn-lg btn-block mt-3 mb-5 btn-cadastro" type="submit">{onEdit ? "Atualizar Evento" : "Publicar Evento"}</button>
+                    <button className="btn btn-lg btn-block mt-3 mb-5 btn-cadastro" type="submit">{onEdit ? "Atualizar agenda" : "Publicar agenda"}</button>
 
                 </form>
             </div>
@@ -180,4 +180,4 @@ function CreateProduct() {
     )
 }
 
-export default CreateProduct
+export default PublicarAgenda

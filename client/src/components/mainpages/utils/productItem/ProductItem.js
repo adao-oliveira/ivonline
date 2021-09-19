@@ -18,7 +18,7 @@ function ProductItem({ product, isAdmin, deleteProduct, handleCheck }) {
                         onChange={() => handleCheck(product._id)} />
                 }
 
-                <img src={product.images.url} className="card-img-top img-cartao" alt="Imagem do Evento" />
+                <img src={product.images.url} className="card-img-top img-cartao" alt="Imagem da Agenda" />
 
                 <div className="card-body">
                     <h5 titulo={product.titulo}>{product.titulo}</h5>

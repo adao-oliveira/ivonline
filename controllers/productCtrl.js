@@ -63,9 +63,9 @@ const productCtrl = {
             return res.status(500).json({msg: err.message})
         }
     },
-    createProduct: async(req, res) =>{
+    publicarAgenda: async(req, res) =>{
         try {
-            const {titulo, descricao, tipoEvento, data, hora, images} = req.body;
+            const {titulo, descricao, tipoAgenda, data, hora, images} = req.body;
             if(!images) return res.status(400).json({msg: "Sem upload de imagem"})
 
             const product = await Products.findOne({titulo})
@@ -73,7 +73,7 @@ const productCtrl = {
                 return res.status(400).json({msg: "Esta agenda já foi publicada"})
 
             const newProduct = new Products({
-               titulo: titulo.toLowerCase(), descricao, tipoEvento, data, hora, images
+               titulo: titulo.toLowerCase(), descricao, tipoAgenda, data, hora, images
             })
 
             await newProduct.save()
@@ -93,11 +93,11 @@ const productCtrl = {
     },
     updateProduct: async(req, res) =>{
         try {
-            const {titulo, descricao, tipoEvento, data, hora, images} = req.body;
+            const {titulo, descricao, tipoAgenda, data, hora, images} = req.body;
             if(!images) return res.status(400).json({msg: "Sem upload de imagem"})
 
             await Products.findOneAndUpdate({_id: req.params.id}, {
-                titulo: titulo.toLowerCase(), descricao, tipoEvento, data, hora, images
+                titulo: titulo.toLowerCase(), descricao, tipoAgenda, data, hora, images
             })
 
             res.json({msg: "Agenda atualizada"})
