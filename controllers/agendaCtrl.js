@@ -1,4 +1,4 @@
-const Products = require('../models/productModel')
+const Agenda = require('../models/agendaModel')
 
 // Filter, sorting and paginating
 
@@ -45,18 +45,18 @@ class APIfeatures {
     }
 }
 
-const productCtrl = {
-    getProducts: async(req, res) =>{
+const agendaCtrl = {
+    getAgendar: async(req, res) =>{
         try {
-            const features = new APIfeatures(Products.find(), req.query)
+            const features = new APIfeatures(Agenda.find(), req.query)
             .filtering().sorting().paginating()
 
-            const products = await features.query
+            const agendar = await features.query
 
             res.json({
                 status: 'success',
-                result: products.length,
-                products: products
+                result: agendar.length,
+                agendar: agendar
             })
             
         } catch (err) {
@@ -68,35 +68,35 @@ const productCtrl = {
             const {titulo, descricao, tipoAgenda, data, hora, images} = req.body;
             if(!images) return res.status(400).json({msg: "Sem upload de imagem"})
 
-            const product = await Products.findOne({titulo})
-            if(product)
+            const agenda = await Agenda.findOne({titulo})
+            if(agenda)
                 return res.status(400).json({msg: "Esta agenda já foi publicada"})
 
-            const newProduct = new Products({
+            const newAgenda = new Agenda({
                titulo: titulo.toLowerCase(), descricao, tipoAgenda, data, hora, images
             })
 
-            await newProduct.save()
+            await newAgenda.save()
             res.json({msg: "Agenda publicada"})
 
         } catch (err) {
             return res.status(500).json({msg: err.message})
         }
     },
-    deleteProduct: async(req, res) =>{
+    deleteAgenda: async(req, res) =>{
         try {
-            await Products.findByIdAndDelete(req.params.id)
+            await Agenda.findByIdAndDelete(req.params.id)
             res.json({msg: "Agenda deletada"})
         } catch (err) {
             return res.status(500).json({msg: err.message})
         }
     },
-    updateProduct: async(req, res) =>{
+    updateAgenda: async(req, res) =>{
         try {
             const {titulo, descricao, tipoAgenda, data, hora, images} = req.body;
             if(!images) return res.status(400).json({msg: "Sem upload de imagem"})
 
-            await Products.findOneAndUpdate({_id: req.params.id}, {
+            await Agenda.findOneAndUpdate({_id: req.params.id}, {
                 titulo: titulo.toLowerCase(), descricao, tipoAgenda, data, hora, images
             })
 
@@ -108,4 +108,4 @@ const productCtrl = {
 }
 
 
-module.exports = productCtrl
+module.exports = agendaCtrl

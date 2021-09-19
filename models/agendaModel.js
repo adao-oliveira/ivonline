@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 
-const productSchema = new mongoose.Schema({
+const agendaSchema = new mongoose.Schema({
     titulo:{
         type: String,
         trim: true,
@@ -37,4 +37,4 @@ const productSchema = new mongoose.Schema({
 })
 
 
-module.exports = mongoose.model("Products", productSchema)
+module.exports = mongoose.model("Agenda", agendaSchema)
