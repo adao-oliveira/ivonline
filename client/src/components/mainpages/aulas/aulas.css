@@ -2,11 +2,17 @@
 
 body {
     background-color: #111;
+    margin-top: 60px;
 }
 
 .container {
     margin-top: 100px;
 }
+
+.aulasHome {
+    margin-top: 180px;
+}
+
 
 .container a:link {
     text-decoration: none;

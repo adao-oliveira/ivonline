@@ -23,7 +23,7 @@ function Home() {
     if (loading) return <div><Loading /></div>
     return (
         <>
-            <div className="container-fluid">
+            <div className="container-fluid" style={{marginTop:'150px'}}>
 
                 <div className="row">
 

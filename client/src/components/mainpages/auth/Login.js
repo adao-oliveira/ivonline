@@ -29,7 +29,7 @@ function Login() {
         <div className="login-content d-flex align-itens-center">
 
             <form className="form-signin mx-auto" onSubmit={loginSubmit}>
-                <div className="text-center mb-4">
+                <div className="text-center mb-4" style={{marginTop:'40px'}}>
                     <h1 className="text-white text-center">Login</h1>
                 </div>
 

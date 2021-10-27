@@ -23,7 +23,7 @@ function DetalhesAgenda() {
 
     return (
         <>
-            <div className="container-fluid">
+            <div className="container-fluid" style={{marginTop:'150px'}}>
                 <div className="row">
                     <img src={detalhesAgenda.images.url} className="img-banner" alt="Banner" />
                     <h3 className="mx-auto mt-5 titulo" style={{textTransform:'uppercase'}}><strong>{detalhesAgenda.titulo}</strong></h3>

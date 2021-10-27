@@ -58,10 +58,11 @@ function Home() {
     if (loading) return <div><Loading /></div>
     return (
         <>
+        <div style={{marginTop:'150px'}}>
             <video autoPlay loop width="100%" >
                 <source src="https://res.cloudinary.com/dahse0ek8/video/upload/v1631041418/20210907_1533141_xqbo6d.mp4" type="video/mp4" />
             </video>
-
+        </div>
             <div className="container-fluid">
 
                 {

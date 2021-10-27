@@ -60,9 +60,9 @@ function TerceiroModulo() {
             </a>
 
             {/* FORMULARIO */}
-            {/* <footer>
-              <p class="text-center"><a href=""><button type="button" class="btn mt-4" style={{ backgroundColor: '#d70000', color:'#fff' }}>Formulário Aula 4</button></a></p>
-            </footer> */}
+            <footer>
+              <p class="text-center"><a href="https://docs.google.com/forms/d/1aFlFPRSsibEvO1nUvQC0_SWzHmvKQ9BJGLXsqjv8oYs/edit?usp=sharing"><button type="button" class="btn mt-4" style={{ backgroundColor: '#d70000', color:'#fff' }}>Formulário Aula 1</button></a></p>
+            </footer>
           </div>
           {/* <!--Fim modal 1--> */}
 

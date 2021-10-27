@@ -1,9 +1,107 @@
 import React, { useContext, useState } from 'react'
 import { GlobalState } from '../../GlobalState'
-import { Link } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 import axios from 'axios'
+import styled from 'styled-components';
+import { MdClose, MdMenu } from 'react-icons/md';
 
-function Navbar() {
+const NavStyles = styled.nav`
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 20px;
+  background: #111;
+  ul {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+    li {
+      display: inline-block;
+      border-radius: 8px;
+      transition: 0.3s ease background-color;
+      margin-top: 5%;
+      &:hover {
+        background-color: #1E1E1E;
+      }
+    }
+    a {
+      display: inline-block;
+      font-family: 'Roboto Condensed', sans-serif;
+      padding: 1rem 2rem;
+      font-size: 25px;
+      color: #fff;
+      outline: none;
+    }
+    .active {
+      color: #fff;
+    }
+  }
+  .mobile-menu-icon {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    width: 4rem;
+    cursor: pointer;
+    display: none;
+    outline: none;
+    margin-top: -2%;
+    color: #fff;
+    font-size: 50px;
+    * {
+      pointer-events: none;
+    }
+  }
+  .navItems .closeNavIcon {
+    display: none;
+    font-size: 50px;
+    color: #fff;
+  }
+  @media only screen and (max-width: 768px) {
+    padding: 0;
+    .hide-item {
+      transform: translateY(calc(-100% - var(--top)));
+    }
+    .mobile-menu-icon {
+      display: block;
+    }
+    .logo {
+      width: 80%;
+    }
+    .navItems {
+      --top: 2rem;
+      transition: 0.3s ease transform;
+      background-color: #1E1E1E;
+      padding: 2rem;
+      width: 90%;
+      max-width: 300px;
+      border-radius: 12px;
+      position: absolute;
+      right: 1rem;
+      top: var(--top);
+      .closeNavIcon {
+        display: block;
+        width: 3rem;
+        margin: 0 0 0 auto;
+        cursor: pointer;
+        * {
+          pointer-events: none;
+        }
+      }
+      li {
+        display: block;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+`;
+
+export default function NavMenu() {
+    
     const state = useContext(GlobalState)
     const [isLogged] = state.userAPI.isLogged
     const [isAdmin] = state.userAPI.isAdmin
@@ -28,10 +126,19 @@ function Navbar() {
         )
     }
 
-
+    const [showNav, setShowNav] = useState(false);
 
     return (
-        <nav className="navbar navbar-expand-lg">
+        <NavStyles>
+            <div
+                className="mobile-menu-icon"
+                onClick={() => setShowNav(!showNav)}
+                role="button"
+                onKeyDown={() => setShowNav(!showNav)}
+                tabIndex={0}
+            >
+                <MdMenu />
+            </div>
 
             <div className="logo">
                 <Link to="/">
@@ -39,68 +146,111 @@ function Navbar() {
                 </Link>
             </div>
 
-            <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent20"
-                aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation">
-                <div class="animated-icon1"><span></span><span></span><span></span></div>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent20">
-                <ul className="navbar-nav">
-
-                    <li className="nav-item">
-                        <Link className="nav-link" className="nav-link" to="/">Home</Link>
-                    </li>
-
-                    <li className="nav-item">
-                        {
-                            isLogged ?
-                                <li className="nav-link"><Link to="/agenda">Agenda</Link></li>
-                                : ''
-                        }
-                    </li>
-
-                    <li className="nav-item">
-                        {
-                            isLogged ?
-                                <li className="nav-link"><Link to="/aulas">I.V Online</Link></li>
-                                : ''
-                        }
-                    </li>
-
-                    <li className="nav-item">
-                        <Link className="nav-link" to="/editarAgenda">
-
-                            {isAdmin ? 'Editar Agenda' : ''}</Link>
-                    </li>
-
-                    <li className="nav-item" style={{ marginRight: '-35px' }}>
-                        <Link className="nav-link" to="/publicarAgenda">
-
-                            {isAdmin ? 'Publicar Agenda' : ''}</Link>
-                    </li>
-
-                    <li className="nav-item">
-
+            <ul className={!showNav ? 'navItems hide-item' : 'navItems'}>
+                <div
+                    className="closeNavIcon"
+                    onClick={() => setShowNav(!showNav)}
+                    role="button"
+                    onKeyDown={() => setShowNav(!showNav)}
+                    tabIndex={0}
+                >
+                    <MdClose />
+                </div>
+                <li>
+                    <NavLink
+                        to="/"
+                        exact
+                        onClick={() => setShowNav(!showNav)}
+                        role="button"
+                        onKeyDown={() => setShowNav(!showNav)}
+                        tabIndex={0}
+                    >
+                        Home
+                    </NavLink>
+                </li>
+                {
+                    isLogged ?
+                        <li>
+                            <NavLink
+                                to="/agenda"
+                                onClick={() => setShowNav(!showNav)}
+                                role="button"
+                                onKeyDown={() => setShowNav(!showNav)}
+                                tabIndex={0}
+                            >
+                                Agenda
+                            </NavLink>
+                        </li>
+                        : ''
+                }
+                {
+                    isLogged ?
+                        <li>
+                            <NavLink
+                                to="/aulas"
+                                onClick={() => setShowNav(!showNav)}
+                                role="button"
+                                onKeyDown={() => setShowNav(!showNav)}
+                                tabIndex={0}
+                            >
+                                I.V Online
+                            </NavLink>
+                        </li>
+                        : ''
+                }
+                <li>
+                    <NavLink
+                        to="/editarAgenda"
+                        onClick={() => setShowNav(!showNav)}
+                        role="button"
+                        onKeyDown={() => setShowNav(!showNav)}
+                        tabIndex={0}
+                    >
+                        {isAdmin ? 'Editar Agenda' : ''}
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink
+                        to="/publicarAgenda"
+                        onClick={() => setShowNav(!showNav)}
+                        role="button"
+                        onKeyDown={() => setShowNav(!showNav)}
+                        tabIndex={0}
+                    >
+                        {isAdmin ? 'Publicar Agenda' : ''}
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink
+                        to="/login"
+                        onClick={() => setShowNav(!showNav)}
+                        role="button"
+                        onKeyDown={() => setShowNav(!showNav)}
+                        tabIndex={0}
+                    >
                         {isAdmin && adminRouter()}
 
                         {
-                            isLogged ? loggedRouter() : <li className="nav-link"><Link to="/login">Login ✥ Register</Link></li>
+                            isLogged ? loggedRouter() : 'Login ✥ Register'
                         }
-                    </li>
-
-                    <li className="nav-item">
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink
+                        to="/publicarAgenda"
+                        onClick={() => setShowNav(!showNav)}
+                        role="button"
+                        onKeyDown={() => setShowNav(!showNav)}
+                        tabIndex={0}
+                    >
                         {
                             isLogged ?
                                 <li className="nav-link"><Link to="/" onClick={logoutUser}>Sair</Link></li>
                                 : ''
                         }
-                    </li>
-
-                </ul>
-            </div>
-
-        </nav >
+                    </NavLink>
+                </li>
+            </ul>
+        </NavStyles>
     )
 }
-
-export default Navbar

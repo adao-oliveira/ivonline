@@ -10,7 +10,7 @@ function Aulas() {
     return (
         <>
             {/* <!-- Pagina --> */}
-            <div className="container">
+            <div className="container aulasHome">
                 <div className="row text-center text-lg-left">
 
                     <div className="col-sm-4 col-md-4">
