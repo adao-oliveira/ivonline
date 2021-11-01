@@ -204,7 +204,7 @@ function SegundoModulo() {
 
             {/* FORMULARIO */}
             {/* <footer>
-              <p class="text-center"><a href=""><button type="button" class="btn mt-4" style={{ backgroundColor: '#008c00', color:'#fff' }}>Formulário Aula 5</button></a></p>
+              <p class="text-center"><a href="https://docs.google.com/forms/d/1Ttr1LSinHraLGBInRHCYgc8n4XqeXnI9vc1wPfqiXRo/edit?usp=sharing"><button type="button" class="btn mt-4" style={{ backgroundColor: '#008c00', color:'#fff' }}>Formulário Aula 5</button></a></p>
             </footer> */}
           </div>
           {/* <!--Fim Modal 5--> */}
@@ -409,19 +409,19 @@ function SegundoModulo() {
             </div>
             {/* IMAGEM DA AULA */}
             <a>
-              <img class="img-fluid z-depth-1" src="https://res.cloudinary.com/dahse0ek8/image/upload/v1631330180/segundo-modulo/0001-7644744644_20210911_001220_0000_v8gtmo.png" alt="video" data-toggle="modal" data-target="#modal11" />
+              {/* <img class="img-fluid z-depth-1" src="https://res.cloudinary.com/dahse0ek8/image/upload/v1631330180/segundo-modulo/0001-7644744644_20210911_001220_0000_v8gtmo.png" alt="video" data-toggle="modal" data-target="#modal11" /> */}
               {/* AULAS BLOQUEADA */}
-              {/* <img class="img-fluid z-depth-1" src="https://res.cloudinary.com/dahse0ek8/image/upload/v1631330180/segundo-modulo/0001-7644744644_20210911_001220_0000_v8gtmo.png" alt="video" data-toggle="modal" data-target="#modal11" style={{ opacity: '0.4' }} />
+              <img class="img-fluid z-depth-1" src="https://res.cloudinary.com/dahse0ek8/image/upload/v1631330180/segundo-modulo/0001-7644744644_20210911_001220_0000_v8gtmo.png" alt="video" data-toggle="modal" data-target="#modal11" style={{ opacity: '0.4' }} />
               <h4 className="text-center text-white">
                 <img src="https://res.cloudinary.com/dahse0ek8/image/upload/v1631327452/primeiro-modulo/kisspng-newport-folk-festival-new-york-city-uber-business-padlock-white-5b2c7382f01bc6.9864656915296398109835_ce11nk.png" style={{ height: '22px', color: '#fff', marginTop: '-5px' }} />
                 BLOQUEADO
-              </h4> */}
+              </h4>
             </a>
 
             {/* FORMULARIO */}
-            <footer>
+            {/* <footer>
               <p class="text-center"><a href="https://docs.google.com/forms/d/1oufw01wFjxPMhIT9qJ-F588NKe7FbYy5nfGsbYF0nFY/edit?usp=sharing"><button type="button" class="btn mt-4" style={{ backgroundColor: '#008c00', color:'#fff' }}>Formulário Aula 11</button></a></p>
-            </footer>
+            </footer> */}
           </div>
           {/* <!--Fim Modal 11--> */}
 

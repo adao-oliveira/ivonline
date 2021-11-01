@@ -4,7 +4,7 @@ import axios from 'axios'
 
 function Register() {
     const [user, setUser] = useState({
-        name: '', sobreNome: '', number: '', email: '', senha: '', whatsapp: '', modulo: '', grupoEquipe: '', perfil: ''
+        name: '', sobreNome: '', number: '', email: '', senha: '', whatsapp: '', modulo: '', grupoEquipe: ''
     })
 
     const onChangeInput = e =>{
@@ -75,14 +75,6 @@ function Register() {
                             <input className="form-control" type="text" name="grupoEquipe" required placeholder="Informe o seu Grupo ou Equipe" value={user.grupoEquipe} onChange={onChangeInput} />
                         </div>
                     </div>
-                </div>
-                {/* PERFIL */}
-                <div className="form-group">
-                    <select className="form-control" type="text" name="perfil" required value={user.perfil} onChange={onChangeInput}>
-                        <option selected>Qual seu perfil?</option>
-                        <option value="1">Aluno</option>
-                        <option value="2">Professor</option>
-                    </select>
                 </div>
 
                 {/* CADASTRAR */}

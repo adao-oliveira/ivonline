@@ -32,7 +32,7 @@ const NavStyles = styled.nav`
     a {
       display: inline-block;
       font-family: 'Roboto Condensed', sans-serif;
-      padding: 1rem 2rem;
+      padding: 1rem 5px;
       font-size: 25px;
       color: #fff;
       outline: none;
@@ -101,7 +101,7 @@ const NavStyles = styled.nav`
 `;
 
 export default function NavMenu() {
-    
+
     const state = useContext(GlobalState)
     const [isLogged] = state.userAPI.isLogged
     const [isAdmin] = state.userAPI.isAdmin
@@ -235,20 +235,12 @@ export default function NavMenu() {
                         }
                     </NavLink>
                 </li>
-                <li>
-                    <NavLink
-                        to="/publicarAgenda"
-                        onClick={() => setShowNav(!showNav)}
-                        role="button"
-                        onKeyDown={() => setShowNav(!showNav)}
-                        tabIndex={0}
-                    >
-                        {
-                            isLogged ?
-                                <li className="nav-link"><Link to="/" onClick={logoutUser}>Sair</Link></li>
-                                : ''
-                        }
-                    </NavLink>
+                <li className="nav-item">
+                    {
+                        isLogged ?
+                            <li className="nav-link"><Link to="/" onClick={logoutUser}>Sair</Link></li>
+                            : ''
+                    }
                 </li>
             </ul>
         </NavStyles>

@@ -38,7 +38,7 @@ function TerceiroModulo() {
                   {/* <!--Conteudo--> */}
                   <div class="modal-body mb-0 p-0">
                     <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/0jr-KAJeISs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/0jr-KAJeISs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
                     </div>
                   </div>
                   {/* <!--Fechar video--> */}
@@ -50,19 +50,19 @@ function TerceiroModulo() {
             </div>
             {/* IMAGEM DA AULA */}
             <a class>
-              <img class="img-fluid z-depth-1" src="https://res.cloudinary.com/dahse0ek8/image/upload/v1631331994/terceiro-modulo/0001-7645360679_20210911_002952_0000_em0f8i.png" alt="video" data-toggle="modal" data-target="#modal1" />
+              {/* <img class="img-fluid z-depth-1" src="https://res.cloudinary.com/dahse0ek8/image/upload/v1631331994/terceiro-modulo/0001-7645360679_20210911_002952_0000_em0f8i.png" alt="video" data-toggle="modal" data-target="#modal1" /> */}
               {/* AULAS BLOQUEADA */}
-              {/* <img class="img-fluid z-depth-1" src="https://res.cloudinary.com/dahse0ek8/image/upload/v1631331994/terceiro-modulo/0001-7645360679_20210911_002952_0000_em0f8i.png" alt="video" data-toggle="modal" data-target="#modal1" style={{ opacity: '0.4' }} />
+              <img class="img-fluid z-depth-1" src="https://res.cloudinary.com/dahse0ek8/image/upload/v1631331994/terceiro-modulo/0001-7645360679_20210911_002952_0000_em0f8i.png" alt="video" data-toggle="modal" data-target="#modal1" style={{ opacity: '0.4' }} />
               <h4 className="text-center text-white">
                 <img src="https://res.cloudinary.com/dahse0ek8/image/upload/v1631327452/primeiro-modulo/kisspng-newport-folk-festival-new-york-city-uber-business-padlock-white-5b2c7382f01bc6.9864656915296398109835_ce11nk.png" style={{ height: '22px', color: '#fff', marginTop: '-5px' }} />
                 BLOQUEADO
-              </h4> */}
+              </h4>
             </a>
 
             {/* FORMULARIO */}
-            <footer>
+            {/* <footer>
               <p class="text-center"><a href="https://docs.google.com/forms/d/1aFlFPRSsibEvO1nUvQC0_SWzHmvKQ9BJGLXsqjv8oYs/edit?usp=sharing"><button type="button" class="btn mt-4" style={{ backgroundColor: '#d70000', color:'#fff' }}>Formulário Aula 1</button></a></p>
-            </footer>
+            </footer> */}
           </div>
           {/* <!--Fim modal 1--> */}
 
@@ -74,7 +74,7 @@ function TerceiroModulo() {
                   {/* <!--Conteudo--> */}
                   <div class="modal-body mb-0 p-0">
                     <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-                      {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/-IIbTLv2GMk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>             */}
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/-IIbTLv2GMk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
                     </div>
                   </div>
                   {/* Fechar video */}
@@ -86,18 +86,18 @@ function TerceiroModulo() {
             </div>
             {/* IMAGEM DA AULA */}
             <a>
-              {/* <img class="img-fluid z-depth-1" src="https://res.cloudinary.com/dahse0ek8/image/upload/v1631331994/terceiro-modulo/0001-7645391766_20210911_003029_0000_spnpf8.png" alt="video" data-toggle="modal" data-target="#modal2" /> */}
+              <img class="img-fluid z-depth-1" src="https://res.cloudinary.com/dahse0ek8/image/upload/v1631331994/terceiro-modulo/0001-7645391766_20210911_003029_0000_spnpf8.png" alt="video" data-toggle="modal" data-target="#modal2" />
               {/* AULAS BLOQUEADA */}
-              <img class="img-fluid z-depth-1" src="https://res.cloudinary.com/dahse0ek8/image/upload/v1631331994/terceiro-modulo/0001-7645391766_20210911_003029_0000_spnpf8.png" alt="video" data-toggle="modal" data-target="#modal2" style={{ opacity: '0.4' }} />
+              {/* <img class="img-fluid z-depth-1" src="https://res.cloudinary.com/dahse0ek8/image/upload/v1631331994/terceiro-modulo/0001-7645391766_20210911_003029_0000_spnpf8.png" alt="video" data-toggle="modal" data-target="#modal2" style={{ opacity: '0.4' }} />
               <h4 className="text-center text-white">
                 <img src="https://res.cloudinary.com/dahse0ek8/image/upload/v1631327452/primeiro-modulo/kisspng-newport-folk-festival-new-york-city-uber-business-padlock-white-5b2c7382f01bc6.9864656915296398109835_ce11nk.png" style={{ height: '22px', color: '#fff', marginTop: '-5px' }} />
                 BLOQUEADO
-              </h4>
+              </h4> */}
             </a>
 
             {/* FORMULARIO */}
             {/* <footer>
-              <p class="text-center"><a href=""><button type="button" class="btn mt-4" style={{ backgroundColor: '#d70000', color:'#fff' }}>Formulário Aula 4</button></a></p>
+              <p class="text-center"><a href=""><button type="button" class="btn mt-4" style={{ backgroundColor: '#d70000', color:'#fff' }}>Formulário Aula 2</button></a></p>
             </footer> */}
           </div>
           {/* <!--Fim modal 2--> */}
