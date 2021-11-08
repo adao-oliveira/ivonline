@@ -35,4 +35,12 @@
       right: 50px;
       margin-top: 20px;
    }
-  }  
+  }
+
+  .btn-group:hover {
+    color: #fff;
+  }
+
+  .dropAdmin .dropdown-menu {
+    margin-top: -15rem;
+  }

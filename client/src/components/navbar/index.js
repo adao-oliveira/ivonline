@@ -199,28 +199,40 @@ export default function NavMenu() {
                         </li>
                         : ''
                 }
-                <li>
-                    <NavLink
-                        to="/editarAgenda"
-                        onClick={() => setShowNav(!showNav)}
-                        role="button"
-                        onKeyDown={() => setShowNav(!showNav)}
-                        tabIndex={0}
-                    >
-                        {isAdmin ? 'Editar Agenda' : ''}
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink
-                        to="/publicarAgenda"
-                        onClick={() => setShowNav(!showNav)}
-                        role="button"
-                        onKeyDown={() => setShowNav(!showNav)}
-                        tabIndex={0}
-                    >
-                        {isAdmin ? 'Publicar Agenda' : ''}
-                    </NavLink>
-                </li>
+
+                {isAdmin ?
+                    <div class="btn-group dropAdmin dropleft">
+                        <a className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-plus"></i> Opções<span className="caret"></span>
+                        </a>
+                        <ul className="dropdown-menu" style={{ backgroundColor: '#111' }}>
+                            <li>
+                                <NavLink
+                                    to="/editarAgenda"
+                                    onClick={() => setShowNav(!showNav)}
+                                    role="button"
+                                    onKeyDown={() => setShowNav(!showNav)}
+                                    tabIndex={0}
+                                >
+                                    {isAdmin ? 'Editar Agenda' : ''}
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink
+                                    to="/publicarAgenda"
+                                    onClick={() => setShowNav(!showNav)}
+                                    role="button"
+                                    onKeyDown={() => setShowNav(!showNav)}
+                                    tabIndex={0}
+                                >
+                                    {isAdmin ? 'Publicar Agenda' : ''}
+                                </NavLink>
+                            </li>
+                        </ul>
+                    </div>
+
+                    : ''}
+
                 <li>
                     <NavLink
                         to="/login"
