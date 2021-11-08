@@ -133,7 +133,7 @@ function PrimeiroModulo() {
 
             {/* FORMULARIO */}
             {/* <footer>
-              <p class="text-center"><a href=""><button type="button" class="btn mt-4" style={{ backgroundColor: '#013f7f', color:'#fff' }}>Formulário Aula 4</button></a></p>
+              <p class="text-center"><a href="https://forms.gle/9QyCMZZLR9SS2tRN9"><button type="button" class="btn mt-4" style={{ backgroundColor: '#013f7f', color:'#fff' }}>Formulário Aula 3</button></a></p>
             </footer> */}
           </div>
           {/* <!--Fim Modal 3--> */}
@@ -168,7 +168,7 @@ function PrimeiroModulo() {
 
             {/* FORMULARIO */}
             {/* <footer>
-              <p class="text-center"><a href=""><button type="button" class="btn mt-4" style={{ backgroundColor: '#013f7f', color:'#fff' }}>Formulário Aula 4</button></a></p>
+              <p class="text-center"><a href="https://forms.gle/VzfBYRvS7wwVUPr66"><button type="button" class="btn mt-4" style={{ backgroundColor: '#013f7f', color:'#fff' }}>Formulário Aula 4</button></a></p>
             </footer> */}
           </div>
           {/* <!--Fim modal 4--> */}
@@ -204,7 +204,7 @@ function PrimeiroModulo() {
 
             {/* FORMULARIO */}
             {/* <footer>
-              <p class="text-center"><a href=""><button type="button" class="btn mt-4" style={{ backgroundColor: '#013f7f', color: '#fff' }}>Formulário Aula 5</button></a></p>
+              <p class="text-center"><a href="https://forms.gle/QKKNQjXYmNc8ofiPA"><button type="button" class="btn mt-4" style={{ backgroundColor: '#013f7f', color: '#fff' }}>Formulário Aula 5</button></a></p>
             </footer> */}
           </div>
           {/* <!--Fim Modal 5--> */}
@@ -240,7 +240,7 @@ function PrimeiroModulo() {
 
             {/* FORMULARIO */}
             {/* <footer>
-              <p class="text-center"><a href=""><button type="button" class="btn mt-4" style={{ backgroundColor: '#013f7f', color: '#fff' }}>Formulário Aula 6</button></a></p>
+              <p class="text-center"><a href="https://forms.gle/u12XVyRi5xCj3msg9"><button type="button" class="btn mt-4" style={{ backgroundColor: '#013f7f', color: '#fff' }}>Formulário Aula 6</button></a></p>
             </footer> */}
           </div>
           {/* <!--Fim Modal 6--> */}
@@ -276,7 +276,7 @@ function PrimeiroModulo() {
 
             {/* FORMULARIO */}
             {/* <footer>
-              <p class="text-center"><a href=""><button type="button" class="btn mt-4" style={{ backgroundColor: '#013f7f', color: '#fff' }}>Formulário Aula 7</button></a></p>
+              <p class="text-center"><a href="https://forms.gle/QaP8YsuLa3rkf7Ka6"><button type="button" class="btn mt-4" style={{ backgroundColor: '#013f7f', color: '#fff' }}>Formulário Aula 7</button></a></p>
             </footer> */}
           </div>
           {/* <!--Fim modal 7--> */}
@@ -312,7 +312,7 @@ function PrimeiroModulo() {
 
             {/* FORMULARIO */}
             {/* <footer>
-              <p class="text-center"><a href=""><button type="button" class="btn mt-4" style={{ backgroundColor: '#013f7f', color: '#fff' }}>Formulário Aula 8</button></a></p>
+              <p class="text-center"><a href="https://forms.gle/Mww6GiawXeG3v1tF6"><button type="button" class="btn mt-4" style={{ backgroundColor: '#013f7f', color: '#fff' }}>Formulário Aula 8</button></a></p>
             </footer> */}
           </div>
           {/* <!--Fim Modal 8--> */}
@@ -420,7 +420,7 @@ function PrimeiroModulo() {
 
             {/* FORMULARIO */}
             {/* <footer>
-              <p class="text-center"><a href=""><button type="button" class="btn mt-4" style={{ backgroundColor: '#013f7f', color:'#fff' }}>Formulário Aula 4</button></a></p>
+              <p class="text-center"><a href="https://forms.gle/onrfzdLECWYqCttF7"><button type="button" class="btn mt-4" style={{ backgroundColor: '#013f7f', color:'#fff' }}>Formulário Aula 11</button></a></p>
             </footer> */}
           </div>
           {/* <!--Fim Modal 11--> */}
@@ -456,7 +456,7 @@ function PrimeiroModulo() {
 
             {/* FORMULARIO */}
             {/* <footer>
-              <p class="text-center"><a href=""><button type="button" class="btn mt-4" style={{ backgroundColor: '#013f7f', color:'#fff' }}>Formulário Aula 4</button></a></p>
+              <p class="text-center"><a href="https://forms.gle/zWjr59EmhS6SSiHC9"><button type="button" class="btn mt-4" style={{ backgroundColor: '#013f7f', color:'#fff' }}>Formulário Aula 12</button></a></p>
             </footer> */}
           </div>
           {/* <!--Fim Modal 12--> */}

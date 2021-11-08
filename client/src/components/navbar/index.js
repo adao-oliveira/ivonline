@@ -41,6 +41,9 @@ const NavStyles = styled.nav`
       color: #fff;
       outline: none;
     }
+    .dropdown-menu a {
+        font-size: 15px !important;
+    }
     .active {
       color: #fff;
     }
@@ -200,6 +203,7 @@ export default function NavMenu() {
                         : ''
                 }
 
+                {/* MENU ADMIN */}
                 {isAdmin ?
                     <div class="btn-group dropAdmin dropleft">
                         <a className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -232,6 +236,8 @@ export default function NavMenu() {
                     </div>
 
                     : ''}
+
+                {/* END */}
 
                 <li>
                     <NavLink

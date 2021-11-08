@@ -61,7 +61,7 @@ function TerceiroModulo() {
 
             {/* FORMULARIO */}
             {/* <footer>
-              <p class="text-center"><a href="https://docs.google.com/forms/d/1aFlFPRSsibEvO1nUvQC0_SWzHmvKQ9BJGLXsqjv8oYs/edit?usp=sharing"><button type="button" class="btn mt-4" style={{ backgroundColor: '#d70000', color:'#fff' }}>Formulário Aula 1</button></a></p>
+              <p class="text-center"><a href="https://forms.gle/ZcvHZCUopTxEitEbA"><button type="button" class="btn mt-4" style={{ backgroundColor: '#d70000', color:'#fff' }}>Formulário Aula 1</button></a></p>
             </footer> */}
           </div>
           {/* <!--Fim modal 1--> */}
@@ -132,9 +132,9 @@ function TerceiroModulo() {
             </a>
 
             {/* FORMULARIO */}
-            {/* <footer>
-              <p class="text-center"><a href=""><button type="button" class="btn mt-4" style={{ backgroundColor: '#d70000', color:'#fff' }}>Formulário Aula 3</button></a></p>
-            </footer> */}
+            <footer>
+              <p class="text-center"><a href="https://forms.gle/4fRg2sFHHr6wY7bx7"><button type="button" class="btn mt-4" style={{ backgroundColor: '#d70000', color:'#fff' }}>Formulário Aula 3</button></a></p>
+            </footer>
           </div>
           {/* <!--Fim Modal 3--> */}
 
@@ -433,7 +433,7 @@ function TerceiroModulo() {
 
             {/* FORMULARIO */}
             {/* <footer>
-              <p class="text-center"><a href=""><button type="button" class="btn mt-4" style={{ backgroundColor: '#d70000', color:'#fff' }}>Formulário Aula 4</button></a></p>
+              <p class="text-center"><a href="https://forms.gle/v78c9fs8CpQ6HDeP6"><button type="button" class="btn mt-4" style={{ backgroundColor: '#d70000', color:'#fff' }}>Formulário Aula 12</button></a></p>
             </footer> */}
           </div>
           {/* <!--Fim Modal 12--> */}

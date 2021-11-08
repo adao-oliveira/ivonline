@@ -61,7 +61,7 @@ function SegundoModulo() {
 
             {/* FORMULARIO */}
             {/* <footer>
-              <p class="text-center"><a href=""><button type="button" class="btn mt-4" style={{ backgroundColor: '#008c00', color:'#fff' }}>Formulário Aula 12</button></a></p>
+              <p class="text-center"><a href="https://forms.gle/aiZm3kgao45z4RR69"><button type="button" class="btn mt-4" style={{ backgroundColor: '#008c00', color:'#fff' }}>Formulário Aula 1</button></a></p>
             </footer> */}
           </div>
           {/* <!--Fim modal 1--> */}
@@ -97,7 +97,7 @@ function SegundoModulo() {
 
             {/* FORMULARIO */}
             {/* <footer>
-              <p class="text-center"><a href=""><button type="button" class="btn mt-4" style={{ backgroundColor: '#008c00', color:'#fff' }}>Formulário Aula 2</button></a></p>
+              <p class="text-center"><a href="https://forms.gle/SAqUbqpBdMmHdVJH6"><button type="button" class="btn mt-4" style={{ backgroundColor: '#008c00', color:'#fff' }}>Formulário Aula 2</button></a></p>
             </footer> */}
           </div>
           {/* <!--Fim modal 2--> */}
@@ -133,7 +133,7 @@ function SegundoModulo() {
 
             {/* FORMULARIO */}
             {/* <footer>
-              <p class="text-center"><a href=""><button type="button" class="btn mt-4" style={{ backgroundColor: '#008c00', color:'#fff' }}>Formulário Aula 3</button></a></p>
+              <p class="text-center"><a href="https://forms.gle/ab1NWYxQtz49ZDGu7"><button type="button" class="btn mt-4" style={{ backgroundColor: '#008c00', color:'#fff' }}>Formulário Aula 3</button></a></p>
             </footer> */}
           </div>
           {/* <!--Fim Modal 3--> */}
@@ -168,7 +168,7 @@ function SegundoModulo() {
 
             {/* FORMULARIO */}
             {/* <footer>
-              <p class="text-center"><a href=""><button type="button" class="btn mt-4" style={{ backgroundColor: '#008c00', color:'#fff' }}>Formulário Aula 4</button></a></p>
+              <p class="text-center"><a href="https://forms.gle/7npdw1Fnhzx7KGPV9"><button type="button" class="btn mt-4" style={{ backgroundColor: '#008c00', color:'#fff' }}>Formulário Aula 4</button></a></p>
             </footer> */}
           </div>
           {/* <!--Fim modal 4--> */}
@@ -204,7 +204,7 @@ function SegundoModulo() {
 
             {/* FORMULARIO */}
             {/* <footer>
-              <p class="text-center"><a href="https://docs.google.com/forms/d/1Ttr1LSinHraLGBInRHCYgc8n4XqeXnI9vc1wPfqiXRo/edit?usp=sharing"><button type="button" class="btn mt-4" style={{ backgroundColor: '#008c00', color:'#fff' }}>Formulário Aula 5</button></a></p>
+              <p class="text-center"><a href="https://forms.gle/oY6SgbKC168m1eFUA"><button type="button" class="btn mt-4" style={{ backgroundColor: '#008c00', color:'#fff' }}>Formulário Aula 5</button></a></p>
             </footer> */}
           </div>
           {/* <!--Fim Modal 5--> */}
@@ -240,7 +240,7 @@ function SegundoModulo() {
 
             {/* FORMULARIO */}
             <footer>
-              <p class="text-center"><a href="https://forms.gle/LFy4E27ypmcpJbVn8"><button type="button" class="btn mt-4" style={{ backgroundColor: '#008c00', color:'#fff' }}>Formulário Aula 6</button></a></p>
+              <p class="text-center"><a href="https://forms.gle/jMrCmtsN21ccszrL7"><button type="button" class="btn mt-4" style={{ backgroundColor: '#008c00', color:'#fff' }}>Formulário Aula 6</button></a></p>
             </footer>
           </div>
           {/* <!--Fim Modal 6--> */}
@@ -276,7 +276,7 @@ function SegundoModulo() {
 
             {/* FORMULARIO */}
             {/* <footer>
-              <p class="text-center"><a href=""><button type="button" class="btn mt-4" style={{ backgroundColor: '#008c00', color:'#fff' }}>Formulário Aula 12</button></a></p>
+              <p class="text-center"><a href="https://forms.gle/tZ94xmkpKhXEyWJz8"><button type="button" class="btn mt-4" style={{ backgroundColor: '#008c00', color:'#fff' }}>Formulário Aula 7</button></a></p>
             </footer> */}
           </div>
           {/* <!--Fim modal 7--> */}
@@ -312,7 +312,7 @@ function SegundoModulo() {
 
             {/* FORMULARIO */}
             {/* <footer>
-              <p class="text-center"><a href=""><button type="button" class="btn mt-4" style={{ backgroundColor: '#008c00', color:'#fff' }}>Formulário Aula 12</button></a></p>
+              <p class="text-center"><a href="https://forms.gle/GnbaYmsR4exVVzBF7"><button type="button" class="btn mt-4" style={{ backgroundColor: '#008c00', color:'#fff' }}>Formulário Aula 8</button></a></p>
             </footer> */}
           </div>
           {/* <!--Fim Modal 8--> */}
@@ -384,7 +384,7 @@ function SegundoModulo() {
 
             {/* FORMULARIO */}
             {/* <footer>
-              <p class="text-center"><a href=""><button type="button" class="btn mt-4" style={{ backgroundColor: '#008c00', color:'#fff' }}>Formulário Aula 12</button></a></p>
+              <p class="text-center"><a href="https://forms.gle/BY2mqt5n1qxTDkNh7"><button type="button" class="btn mt-4" style={{ backgroundColor: '#008c00', color:'#fff' }}>Formulário Aula 10</button></a></p>
             </footer> */}
           </div>
           {/* <!--Fim Modal 10--> */}
@@ -420,7 +420,7 @@ function SegundoModulo() {
 
             {/* FORMULARIO */}
             {/* <footer>
-              <p class="text-center"><a href="https://docs.google.com/forms/d/1oufw01wFjxPMhIT9qJ-F588NKe7FbYy5nfGsbYF0nFY/edit?usp=sharing"><button type="button" class="btn mt-4" style={{ backgroundColor: '#008c00', color:'#fff' }}>Formulário Aula 11</button></a></p>
+              <p class="text-center"><a href="https://forms.gle/44jNLRjVjJzX5Qna6"><button type="button" class="btn mt-4" style={{ backgroundColor: '#008c00', color:'#fff' }}>Formulário Aula 11</button></a></p>
             </footer> */}
           </div>
           {/* <!--Fim Modal 11--> */}
