@@ -8,7 +8,7 @@ function TerceiroModulo() {
       <div className="d-none d-lg-block">
         <img src="https://res.cloudinary.com/dahse0ek8/image/upload/v1631161609/iv3_d2kmw1.png"
           height="400px"
-          width="1350px"
+          width="100%"
         />
       </div>
       {/* MOBILE */}
@@ -20,7 +20,7 @@ function TerceiroModulo() {
       </div>
 
       <div class="container">
-        <div class="alert mt-4" style={{ backgroundColor: '#d70000', color: '#fff' }}>
+        <div class="alert" style={{ backgroundColor: '#d70000', color: '#fff', marginTop:'-5rem' }}>
           <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
           <strong style={{ color: '#fff' }}>
             Após assistir as aulas preencha o formulário. Caso contrário a sua presença não será contada
@@ -74,7 +74,7 @@ function TerceiroModulo() {
                   {/* <!--Conteudo--> */}
                   <div class="modal-body mb-0 p-0">
                     <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/-IIbTLv2GMk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
+                      {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/-IIbTLv2GMk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>             */}
                     </div>
                   </div>
                   {/* Fechar video */}
@@ -86,13 +86,13 @@ function TerceiroModulo() {
             </div>
             {/* IMAGEM DA AULA */}
             <a>
-              <img class="img-fluid z-depth-1" src="https://res.cloudinary.com/dahse0ek8/image/upload/v1631331994/terceiro-modulo/0001-7645391766_20210911_003029_0000_spnpf8.png" alt="video" data-toggle="modal" data-target="#modal2" />
+              {/* <img class="img-fluid z-depth-1" src="https://res.cloudinary.com/dahse0ek8/image/upload/v1631331994/terceiro-modulo/0001-7645391766_20210911_003029_0000_spnpf8.png" alt="video" data-toggle="modal" data-target="#modal2" /> */}
               {/* AULAS BLOQUEADA */}
-              {/* <img class="img-fluid z-depth-1" src="https://res.cloudinary.com/dahse0ek8/image/upload/v1631331994/terceiro-modulo/0001-7645391766_20210911_003029_0000_spnpf8.png" alt="video" data-toggle="modal" data-target="#modal2" style={{ opacity: '0.4' }} />
+              <img class="img-fluid z-depth-1" src="https://res.cloudinary.com/dahse0ek8/image/upload/v1631331994/terceiro-modulo/0001-7645391766_20210911_003029_0000_spnpf8.png" alt="video" data-toggle="modal" data-target="#modal2" style={{ opacity: '0.4' }} />
               <h4 className="text-center text-white">
                 <img src="https://res.cloudinary.com/dahse0ek8/image/upload/v1631327452/primeiro-modulo/kisspng-newport-folk-festival-new-york-city-uber-business-padlock-white-5b2c7382f01bc6.9864656915296398109835_ce11nk.png" style={{ height: '22px', color: '#fff', marginTop: '-5px' }} />
                 BLOQUEADO
-              </h4> */}
+              </h4>
             </a>
 
             {/* FORMULARIO */}
@@ -110,7 +110,7 @@ function TerceiroModulo() {
                   {/* <!--Conteudo--> */}
                   <div class="modal-body mb-0 p-0">
                     <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-                      {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/6cnB6RP0gW4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>             */}
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/6cnB6RP0gW4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
                     </div>
                   </div>
                   {/* Fechar video */}
@@ -122,18 +122,18 @@ function TerceiroModulo() {
             </div>
             {/* IMAGEM DA AULA */}
             <a>
-              {/* <img class="img-fluid z-depth-1" src="https://res.cloudinary.com/dahse0ek8/image/upload/v1631331994/terceiro-modulo/0001-7645423044_20210911_003122_0000_zmoin2.png" alt="video" data-toggle="modal" data-target="#modal3" /> */}
+              <img class="img-fluid z-depth-1" src="https://res.cloudinary.com/dahse0ek8/image/upload/v1631331994/terceiro-modulo/0001-7645423044_20210911_003122_0000_zmoin2.png" alt="video" data-toggle="modal" data-target="#modal3" />
               {/* AULAS BLOQUEADA */}
-              <img class="img-fluid z-depth-1" src="https://res.cloudinary.com/dahse0ek8/image/upload/v1631331994/terceiro-modulo/0001-7645423044_20210911_003122_0000_zmoin2.png" alt="video" data-toggle="modal" data-target="#modal3" style={{ opacity: '0.4' }} />
+              {/* <img class="img-fluid z-depth-1" src="https://res.cloudinary.com/dahse0ek8/image/upload/v1631331994/terceiro-modulo/0001-7645423044_20210911_003122_0000_zmoin2.png" alt="video" data-toggle="modal" data-target="#modal3" style={{ opacity: '0.4' }} />
               <h4 className="text-center text-white">
                 <img src="https://res.cloudinary.com/dahse0ek8/image/upload/v1631327452/primeiro-modulo/kisspng-newport-folk-festival-new-york-city-uber-business-padlock-white-5b2c7382f01bc6.9864656915296398109835_ce11nk.png" style={{ height: '22px', color: '#fff', marginTop: '-5px' }} />
                 BLOQUEADO
-              </h4>
+              </h4> */}
             </a>
 
             {/* FORMULARIO */}
             {/* <footer>
-              <p class="text-center"><a href=""><button type="button" class="btn mt-4" style={{ backgroundColor: '#d70000', color:'#fff' }}>Formulário Aula 4</button></a></p>
+              <p class="text-center"><a href=""><button type="button" class="btn mt-4" style={{ backgroundColor: '#d70000', color:'#fff' }}>Formulário Aula 3</button></a></p>
             </footer> */}
           </div>
           {/* <!--Fim Modal 3--> */}

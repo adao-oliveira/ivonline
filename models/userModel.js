@@ -35,7 +35,7 @@ const userSchema = new mongoose.Schema({
         required: true,
         trim: true
     },
-    grupoEquipe: {
+    equipe: {
         type: String,
         required: true,
         trim: true

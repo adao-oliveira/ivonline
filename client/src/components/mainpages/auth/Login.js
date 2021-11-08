@@ -39,7 +39,7 @@ function Login() {
                 <button className="btn btn-lg btn-block btn-login" type="submit">Acessar</button>
 
                 <div className="opcoes-login mt-5 text-center">
-                    <Link to="/" className="mx-2">Recuperar Senha</Link>
+                    <Link to="/Reset" className="mx-2">Recuperar Senha</Link>
                     <span className="text-white">&#128293;</span>
                     <Link to='/register' className="mx-2">Quero cadastrar</Link>
                 </div>

@@ -6,6 +6,10 @@ import styled from 'styled-components';
 import { MdClose, MdMenu } from 'react-icons/md';
 
 const NavStyles = styled.nav`
+.logo {
+    width: 80%;
+    margin-top: 20px;
+  }
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -24,7 +28,7 @@ const NavStyles = styled.nav`
       display: inline-block;
       border-radius: 8px;
       transition: 0.3s ease background-color;
-      margin-top: 5%;
+      margin-top: 3%;
       &:hover {
         background-color: #1E1E1E;
       }
@@ -68,9 +72,6 @@ const NavStyles = styled.nav`
     }
     .mobile-menu-icon {
       display: block;
-    }
-    .logo {
-      width: 80%;
     }
     .navItems {
       --top: 2rem;

@@ -8,7 +8,7 @@ function SegundoModulo() {
       <div className="d-none d-lg-block">
         <img src="https://res.cloudinary.com/dahse0ek8/image/upload/v1631161624/iv2_dulvoj.png"
           height="400px"
-          width="1350px"
+          width="100%"
         />
       </div>
       {/* MOBILE */}
@@ -20,7 +20,7 @@ function SegundoModulo() {
       </div>
 
       <div class="container">
-        <div class="alert mt-4" style={{ backgroundColor: '#008c00', color: '#fff' }}>
+        <div class="alert" style={{ backgroundColor: '#008c00', color: '#fff', marginTop:'-5rem' }}>
           <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
           <strong style={{ color: '#fff' }}>
             Após assistir as aulas preencha o formulário. Caso contrário a sua presença não será contada
@@ -217,7 +217,7 @@ function SegundoModulo() {
                   {/* Conteudo */}
                   <div class="modal-body mb-0 p-0">
                     <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-                      {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/GHgmPJQ3yJ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/GHgmPJQ3yJ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                   </div>
                   {/* Fechar video */}
@@ -229,19 +229,19 @@ function SegundoModulo() {
             </div>
             {/* IMAGEM DA AULA */}
             <a>
-              {/* <img class="img-fluid z-depth-1" src="https://res.cloudinary.com/dahse0ek8/image/upload/v1631330180/segundo-modulo/0001-7644550568_20210911_000701_0000_d1nhnh.png" alt="video" data-toggle="modal" data-target="#modal6" /> */}
+              <img class="img-fluid z-depth-1" src="https://res.cloudinary.com/dahse0ek8/image/upload/v1631330180/segundo-modulo/0001-7644550568_20210911_000701_0000_d1nhnh.png" alt="video" data-toggle="modal" data-target="#modal6" />
               {/* AULAS BLOQUEADA */}
-              <img class="img-fluid z-depth-1" src="https://res.cloudinary.com/dahse0ek8/image/upload/v1631330180/segundo-modulo/0001-7644550568_20210911_000701_0000_d1nhnh.png" alt="video" data-toggle="modal" data-target="#modal6" style={{ opacity: '0.4' }} />
+              {/* <img class="img-fluid z-depth-1" src="https://res.cloudinary.com/dahse0ek8/image/upload/v1631330180/segundo-modulo/0001-7644550568_20210911_000701_0000_d1nhnh.png" alt="video" data-toggle="modal" data-target="#modal6" style={{ opacity: '0.4' }} />
               <h4 className="text-center text-white">
                 <img src="https://res.cloudinary.com/dahse0ek8/image/upload/v1631327452/primeiro-modulo/kisspng-newport-folk-festival-new-york-city-uber-business-padlock-white-5b2c7382f01bc6.9864656915296398109835_ce11nk.png" style={{ height: '22px', color: '#fff', marginTop: '-5px' }} />
                 BLOQUEADO
-              </h4>
+              </h4> */}
             </a>
 
             {/* FORMULARIO */}
-            {/* <footer>
-              <p class="text-center"><a href=""><button type="button" class="btn mt-4" style={{ backgroundColor: '#008c00', color:'#fff' }}>Formulário Aula 12</button></a></p>
-            </footer> */}
+            <footer>
+              <p class="text-center"><a href="https://forms.gle/LFy4E27ypmcpJbVn8"><button type="button" class="btn mt-4" style={{ backgroundColor: '#008c00', color:'#fff' }}>Formulário Aula 6</button></a></p>
+            </footer>
           </div>
           {/* <!--Fim Modal 6--> */}
 

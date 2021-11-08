@@ -12,7 +12,7 @@ import NotFound from './utils/not_found/NotFound'
 import publicarAgenda from './publicarAgenda/index'
 import editarAgenda from './editarAgenda/index'
 import Agenda from './home/agenda'
-
+import Reset from './auth/Reset'
 import {GlobalState} from '../../GlobalState'
 
 
@@ -40,6 +40,7 @@ function Pages() {
             <Route path="/segundo_modulo" exact component={segundo_modulo} />
             <Route path="/terceiro_modulo" exact component={terceiro_modulo} />
 
+            <Route path="/reset" exact component={Reset} />
             <Route path="*" exact component={NotFound} />
         </Switch>
     )

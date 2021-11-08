@@ -20,14 +20,6 @@ const agendaSchema = new mongoose.Schema({
         type: Object,
         required: true
     },
-    data:{
-        type: Date,
-        required: false
-    },
-    hora:{
-        type: Date,
-        required: false
-    },
     checked:{
         type: Boolean,
         default: false

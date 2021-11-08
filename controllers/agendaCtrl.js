@@ -65,7 +65,7 @@ const agendaCtrl = {
     },
     publicarAgenda: async(req, res) =>{
         try {
-            const {titulo, descricao, tipoAgenda, data, hora, images} = req.body;
+            const {titulo, descricao, tipoAgenda, images} = req.body;
             if(!images) return res.status(400).json({msg: "Sem upload de imagem"})
 
             const agenda = await Agenda.findOne({titulo})
@@ -73,7 +73,7 @@ const agendaCtrl = {
                 return res.status(400).json({msg: "Esta agenda já foi publicada"})
 
             const newAgenda = new Agenda({
-               titulo: titulo.toLowerCase(), descricao, tipoAgenda, data, hora, images
+               titulo: titulo.toLowerCase(), descricao, tipoAgenda, images
             })
 
             await newAgenda.save()
@@ -93,11 +93,11 @@ const agendaCtrl = {
     },
     updateAgenda: async(req, res) =>{
         try {
-            const {titulo, descricao, tipoAgenda, data, hora, images} = req.body;
+            const {titulo, descricao, tipoAgenda, images} = req.body;
             if(!images) return res.status(400).json({msg: "Sem upload de imagem"})
 
             await Agenda.findOneAndUpdate({_id: req.params.id}, {
-                titulo: titulo.toLowerCase(), descricao, tipoAgenda, data, hora, images
+                titulo: titulo.toLowerCase(), descricao, tipoAgenda, images
             })
 
             res.json({msg: "Agenda atualizada"})

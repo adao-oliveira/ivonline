@@ -8,8 +8,6 @@ const initialState = {
     titulo: '',
     descricao: '',
     tipoAgenda: '',
-    data: '',
-    hora: '',
     _id: ''
 }
 
@@ -141,22 +139,6 @@ function PublicarAgenda() {
                     <div className="form-group">
                         <label>Descrição da Agenda:</label>
                         <textarea className="form-control" rows="3" type="text" name="descricao" id="descricao" required value={agenda.descricao} onChange={handleChangeInput} />
-                    </div>
-
-                    <div className="form-group row">
-                        <div className="col-6">
-                            <label>Data:</label>
-                            <div required value={agenda.data} onChange={handleChangeInput}>
-                                <input type="date" className="form-control" />
-                            </div>
-                        </div>
-
-                        <div className="col-6">
-                            <label>Hora:</label>
-                            <div required value={agenda.hora} onChange={handleChangeInput}>
-                                <input type="time" className="form-control" />
-                            </div>
-                        </div>
                     </div>
 
                     <div className="form-group">

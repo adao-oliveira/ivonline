@@ -5,7 +5,7 @@ const jwt = require('jsonwebtoken')
 const userCtrl = {
     register: async (req, res) =>{
         try {
-            const {name, sobreNome, number, email, senha, whatsapp, modulo, grupoEquipe} = req.body;
+            const {name, sobreNome, number, email, senha, whatsapp, modulo, equipe} = req.body;
 
             const user = await Users.findOne({number})
             if(user) return res.status(400).json({msg: "Essa matrícula já está cadastrada em nosso sistema"})
@@ -16,7 +16,7 @@ const userCtrl = {
             // Password Encryption
             const passwordHash = await bcrypt.hash(senha, 10)
             const newUser = new Users({
-                name, sobreNome, number, email, whatsapp, modulo, grupoEquipe, senha: passwordHash
+                name, sobreNome, number, email, whatsapp, modulo, equipe, senha: passwordHash
             })
 
             // Save mongodb
