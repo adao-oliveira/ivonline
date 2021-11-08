@@ -7,11 +7,6 @@ const agendaSchema = new mongoose.Schema({
         trim: true,
         required: true
     },
-    tipoAgenda:{
-        type: String,
-        trim: true,
-        required: true
-    },
     descricao:{
         type: String,
         required: true

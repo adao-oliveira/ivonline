@@ -29,14 +29,6 @@ function DetalhesAgenda() {
                 </div>
 
                 <div className="container" style={{ marginTop: '2.5rem' }}>
-                    <div className="row d-flex justify-content-around ">
-                        <div className="col-md-3 col-sm-12 box-info p-3 my-2">
-                            <i className="fas fa-ticket-alt fa-2x"></i>
-                            <h5><strong>Tipo</strong></h5>
-                            <span className="mt-3">{detalhesAgenda.tipoAgenda}</span>
-                        </div>
-                    </div>
-
                     <div className="row box-detalhes mt-5">
                         <div className="col-12 text-center">
                             <h5><strong>Detalhes da Agenda</strong></h5>
@@ -44,8 +36,6 @@ function DetalhesAgenda() {
                         <div className="col-12 text-center">
                             <p>{detalhesAgenda.descricao}</p>
                         </div>
-
-
                     </div>
                 </div>
             </div>

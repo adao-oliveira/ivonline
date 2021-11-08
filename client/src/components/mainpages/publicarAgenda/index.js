@@ -7,7 +7,6 @@ import { useParams } from 'react-router-dom'
 const initialState = {
     titulo: '',
     descricao: '',
-    tipoAgenda: '',
     _id: ''
 }
 
@@ -129,11 +128,6 @@ function PublicarAgenda() {
                     <div className="form-group">
                         <label>Título:</label>
                         <input className="form-control" type="text" name="titulo" id="titulo" required value={agenda.titulo} onChange={handleChangeInput} />
-                    </div>
-
-                    <div className="form-group">
-                        <label>Tipo da Agenda:</label>
-                        <input className="form-control" type="text" name="tipoAgenda" id="tipoAgenda" required value={agenda.tipoAgenda} onChange={handleChangeInput} placeholder="-- Informe o tipo da agenda --" />
                     </div>
 
                     <div className="form-group">
