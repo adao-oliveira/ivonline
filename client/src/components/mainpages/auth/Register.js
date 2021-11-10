@@ -7,19 +7,19 @@ function Register() {
         name: '', sobreNome: '', number: '', email: '', senha: '', whatsapp: '', modulo: '', equipe: ''
     })
 
-    const onChangeInput = e =>{
-        const {name, value} = e.target;
-        setUser({...user, [name]:value})
+    const onChangeInput = e => {
+        const { name, value } = e.target;
+        setUser({ ...user, [name]: value })
     }
 
-    const registerSubmit = async e =>{
+    const registerSubmit = async e => {
         e.preventDefault()
         try {
-            await axios.post('/user/register', {...user})
+            await axios.post('/user/register', { ...user })
 
             localStorage.setItem('firstLogin', true)
 
-            
+
             window.location.href = "/";
         } catch (err) {
             alert(err.response.data.msg)
@@ -56,7 +56,7 @@ function Register() {
                     </div>
                     {/* WHATSAPP */}
                     <div className="form-group col-md-6">
-                        <input className="form-control" type="number" name="whatsapp" required placeholder="Whatsapp" value={user.whatsapp} onChange={onChangeInput} />
+                        <input className="form-control" type="number" name="whatsapp" maxLength="11" required placeholder="Whatsapp" value={user.whatsapp} onChange={onChangeInput} />
                     </div>
                 </div>
                 {/* MODULO */}
@@ -71,9 +71,13 @@ function Register() {
                     </div>
                     {/* EQUIPE */}
                     <div className="form-group col-md-8">
-                        <div>
-                            <input className="form-control" type="text" name="equipe" required placeholder="Nome da Equipe" value={user.equipe} onChange={onChangeInput} />
-                        </div>
+                        <select className="form-control" type="text" name="equipe" required value={user.equipe} onChange={onChangeInput}>
+                            <option selected>Equipe</option>
+                            <option value="Lions">Lions</option>
+                            <option value="Audácia">Audácia</option>
+                            <option value="Fortes">Fortes</option>
+                            <option value="Flecha">Flecha</option>
+                        </select>
                     </div>
                 </div>
 

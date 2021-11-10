@@ -232,6 +232,17 @@ export default function NavMenu() {
                                     {isAdmin ? 'Publicar Agenda' : ''}
                                 </NavLink>
                             </li>
+                            <li>
+                                <NavLink
+                                    to="/publicarAula"
+                                    onClick={() => setShowNav(!showNav)}
+                                    role="button"
+                                    onKeyDown={() => setShowNav(!showNav)}
+                                    tabIndex={0}
+                                >
+                                    {isAdmin ? 'Publicar Aula' : ''}
+                                </NavLink>
+                            </li>
                         </ul>
                     </div>
 

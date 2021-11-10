@@ -48,7 +48,7 @@ function PublicarAgenda() {
             if (!isAdmin) return alert("Você não possui permissão para realizar essa ação")
             const file = e.target.files[0]
 
-            if (!file) return alert("File not exist.")
+            if (!file) return alert("Arquivo não existe")
 
             if (file.size < !10) // 1mb
                 return alert("Tamanho da imagem muito grande!")
@@ -94,7 +94,7 @@ function PublicarAgenda() {
         e.preventDefault()
         try {
             if (!isAdmin) return alert("Você não possui permissão para realizar essa ação")
-            if (!images) return alert("No Image Upload")
+            if (!images) return alert("Sem imagem no upload")
 
             if (onEdit) {
                 await axios.put(`/api/agendar/${agenda._id}`, { ...agenda, images }, {
