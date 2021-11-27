@@ -146,7 +146,7 @@ function PrimeiroModulo() {
                   {/* <!--Conteudo--> */}
                   <div class="modal-body mb-0 p-0">
                     <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/HAp1t9m4Hmg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      <iframe width="560" height="315" src="https://youtu.be/P6WvbdfLiH0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                   </div>
                   {/* Fechar video */}
@@ -181,7 +181,7 @@ function PrimeiroModulo() {
                   {/* Conteudo */}
                   <div class="modal-body mb-0 p-0">
                     <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-                      {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/D6ha4Bv_gBY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
+                      {/* <iframe width="560" height="315" src="https://youtu.be/ItsNfsK5g2A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
                     </div>
                   </div>
                   {/* Fechar video */}
@@ -217,7 +217,7 @@ function PrimeiroModulo() {
                   {/* Conteudo */}
                   <div class="modal-body mb-0 p-0">
                     <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-                      {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/brKRoD1cd7c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
+                      {/* <iframe width="560" height="315" src="https://youtu.be/2-VlyomDvV0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
                     </div>
                   </div>
                   {/* Fechar video */}
@@ -253,7 +253,7 @@ function PrimeiroModulo() {
                   {/* Conteudo */}
                   <div class="modal-body mb-0 p-0">
                     <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-                      {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/WQEuLRnQhME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
+                      {/* <iframe width="560" height="315" src="https://youtu.be/j4GN6AD8Ki0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
                     </div>
                   </div>
                   {/* Fechar video */}
@@ -289,7 +289,7 @@ function PrimeiroModulo() {
                   {/* Conteudo */}
                   <div class="modal-body mb-0 p-0">
                     <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-                      {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/bQpn5Y26jTw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
+                      {/* <iframe width="560" height="315" src="https://youtu.be/qu_q8j93ZvE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
                     </div>
                   </div>
                   {/* Fechar video */}

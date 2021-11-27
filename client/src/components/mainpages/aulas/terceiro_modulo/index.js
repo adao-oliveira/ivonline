@@ -97,7 +97,7 @@ function TerceiroModulo() {
 
             {/* FORMULARIO */}
             {/* <footer>
-              <p class="text-center"><a href=""><button type="button" class="btn mt-4" style={{ backgroundColor: '#d70000', color:'#fff' }}>Formulário Aula 2</button></a></p>
+              <p class="text-center"><a href="https://forms.gle/gfBQBSTUofKAKw4k7"><button type="button" class="btn mt-4" style={{ backgroundColor: '#d70000', color:'#fff' }}>Formulário Aula 2</button></a></p>
             </footer> */}
           </div>
           {/* <!--Fim modal 2--> */}
@@ -194,7 +194,7 @@ function TerceiroModulo() {
                   {/* Conteudo */}
                   <div class="modal-body mb-0 p-0">
                     <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-                      {/* <iframe width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
+                      {/* <iframe width="560" height="315" src="https://youtu.be/X6ZKxhLOUH0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
                     </div>
                   </div>
                   {/* Fechar video */}
@@ -230,7 +230,7 @@ function TerceiroModulo() {
                   {/* Conteudo */}
                   <div class="modal-body mb-0 p-0">
                     <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-                      {/* <iframe width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
+                      {/* <iframe width="560" height="315" src="https://youtu.be/t51wU2stVl4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
                     </div>
                   </div>
                   {/* Fechar video */}
@@ -266,7 +266,7 @@ function TerceiroModulo() {
                   {/* Conteudo */}
                   <div class="modal-body mb-0 p-0">
                     <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-                      {/* <iframe width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
+                      {/* <iframe width="560" height="315" src="https://youtu.be/kijxIKDNb_M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
                     </div>
                   </div>
                   {/* Fechar video */}
@@ -338,7 +338,7 @@ function TerceiroModulo() {
                   {/* Conteudo */}
                   <div class="modal-body mb-0 p-0">
                     <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-                      {/* <iframe width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
+                      {/* <iframe width="560" height="315" src="https://youtu.be/dNEW7RfpK-M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
                     </div>
                   </div>
                   {/* Fechar video */}
@@ -374,7 +374,7 @@ function TerceiroModulo() {
                   {/* <!--Conteudo--> */}
                   <div class="modal-body mb-0 p-0">
                     <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-                      {/* <iframe width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
+                      {/* <iframe width="560" height="315" src="https://youtu.be/y_XpHp9P1wY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
                     </div>
                   </div>
                   {/* Fechar video */}
