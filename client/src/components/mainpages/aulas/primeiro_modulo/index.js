@@ -146,7 +146,7 @@ function PrimeiroModulo() {
                   {/* <!--Conteudo--> */}
                   <div class="modal-body mb-0 p-0">
                     <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-                      <iframe width="560" height="315" src="https://youtu.be/P6WvbdfLiH0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/P6WvbdfLiH0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                   </div>
                   {/* Fechar video */}
@@ -181,7 +181,7 @@ function PrimeiroModulo() {
                   {/* Conteudo */}
                   <div class="modal-body mb-0 p-0">
                     <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-                      {/* <iframe width="560" height="315" src="https://youtu.be/ItsNfsK5g2A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/ItsNfsK5g2A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                   </div>
                   {/* Fechar video */}
@@ -193,19 +193,19 @@ function PrimeiroModulo() {
             </div>
             {/* IMAGEM DA AULA */}
             <a>
-              {/* <img class="img-fluid z-depth-1" src="https://res.cloudinary.com/dahse0ek8/image/upload/v1631325994/primeiro-modulo/0001-7642350150_20210910_230607_0000_b2huhk.png" alt="video" data-toggle="modal" data-target="#modal5" /> */}
+              <img class="img-fluid z-depth-1" src="https://res.cloudinary.com/dahse0ek8/image/upload/v1631325994/primeiro-modulo/0001-7642350150_20210910_230607_0000_b2huhk.png" alt="video" data-toggle="modal" data-target="#modal5" />
               {/* AULAS BLOQUEADA */}
-              <img class="img-fluid z-depth-1" src="https://res.cloudinary.com/dahse0ek8/image/upload/v1631325994/primeiro-modulo/0001-7642350150_20210910_230607_0000_b2huhk.png" alt="video" data-toggle="modal" data-target="#modal5" style={{ opacity: '0.4' }} />
+              {/* <img class="img-fluid z-depth-1" src="https://res.cloudinary.com/dahse0ek8/image/upload/v1631325994/primeiro-modulo/0001-7642350150_20210910_230607_0000_b2huhk.png" alt="video" data-toggle="modal" data-target="#modal5" style={{ opacity: '0.4' }} />
               <h4 className="text-center text-white">
                 <img src="https://res.cloudinary.com/dahse0ek8/image/upload/v1631327452/primeiro-modulo/kisspng-newport-folk-festival-new-york-city-uber-business-padlock-white-5b2c7382f01bc6.9864656915296398109835_ce11nk.png" style={{ height: '22px', color: '#fff', marginTop: '-5px' }} />
                 BLOQUEADO
-              </h4>
+              </h4> */}
             </a>
 
             {/* FORMULARIO */}
-            {/* <footer>
+            <footer>
               <p class="text-center"><a href="https://forms.gle/QKKNQjXYmNc8ofiPA"><button type="button" class="btn mt-4" style={{ backgroundColor: '#013f7f', color: '#fff' }}>Formulário Aula 5</button></a></p>
-            </footer> */}
+            </footer>
           </div>
           {/* <!--Fim Modal 5--> */}
 
@@ -217,7 +217,7 @@ function PrimeiroModulo() {
                   {/* Conteudo */}
                   <div class="modal-body mb-0 p-0">
                     <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-                      {/* <iframe width="560" height="315" src="https://youtu.be/2-VlyomDvV0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
+                      {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/2-VlyomDvV0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
                     </div>
                   </div>
                   {/* Fechar video */}
@@ -253,7 +253,7 @@ function PrimeiroModulo() {
                   {/* Conteudo */}
                   <div class="modal-body mb-0 p-0">
                     <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-                      {/* <iframe width="560" height="315" src="https://youtu.be/j4GN6AD8Ki0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
+                      {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/j4GN6AD8Ki0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
                     </div>
                   </div>
                   {/* Fechar video */}
@@ -289,7 +289,7 @@ function PrimeiroModulo() {
                   {/* Conteudo */}
                   <div class="modal-body mb-0 p-0">
                     <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-                      {/* <iframe width="560" height="315" src="https://youtu.be/qu_q8j93ZvE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
+                      {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/qu_q8j93ZvE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
                     </div>
                   </div>
                   {/* Fechar video */}
